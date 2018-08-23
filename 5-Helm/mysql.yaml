@@ -1,7 +1,8 @@
 ## mysql image version
 ## ref: https://hub.docker.com/r/library/mysql/tags/
 ##
-image: "mysql"
+#image: "mysql"
+image: "harbor.haas-63.pez.pivotal.io/forrester-new-wave/mysql"
 imageTag: "5.7.14"
 
 ## Specify password for root user

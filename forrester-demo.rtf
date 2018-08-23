@@ -1,0 +1,216 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fmodern\fcharset0 CourierNewPSMT;\f2\fnil\fcharset0 HelveticaNeue;
+\f3\froman\fcharset0 Times-Roman;\f4\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red16\green60\blue192;\red39\green78\blue204;
+\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c6667\c33333\c80000;\cssrgb\c20000\c40392\c83922;
+\cssrgb\c100000\c100000\c100000;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid101\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid201\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid301\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid4}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}}
+\margl1440\margr1440\vieww14400\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf0 Forrester demo\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs22 \cf0 \expnd0\expndtw0\kerning0
+Ikgw7J9wNRcBC49LYb!
+\f0\fs28 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2\fs24 \cf2 \expnd0\expndtw0\kerning0
+VPN. \
+\
+\
+I. Show Ops Manager and PKS tile.  Show plans.\
+\
+  {\field{\*\fldinst{HYPERLINK "https://opsmgr-02.haas-63.pez.pivotal.io/"}}{\fldrslt https://opsmgr-02.haas-63.pez.pivotal.io/}}
+\f0\fs28 \cf0 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2\fs24 \cf2 \expnd0\expndtw0\kerning0
+II. Log into OpsMan VM using CLI (ubuntu/ubuntu). \
+ \
+   Show PKS User Mgmt\
+\
+
+\f1 \cf2 \outl0\strokewidth0 \strokec2  uaac target https://api.pks.haas-63.pez.pivotal.io:8443 --ca-cert api.crt --skip-ssl-validation
+\f3 \
+
+\f2 \cf2 \outl0\strokewidth0 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf2 \outl0\strokewidth0 \strokec2  uaac token client get admin\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f4 \cf2     joFp19w3aNwkGy2S_d10LUYWcB433eaY\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2 \cf2 \outl0\strokewidth0 \
+
+\f1  uaac groups | grep pks
+\f2 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\
+\
+III. Connect to PKS using CLI. Login.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf0  pks login -k -a api.pks.haas-63.pez.pivotal.io -u fmelo
+\f2 \cf2 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\
+IV. List Plans and Clusters\
+\
+
+\f1  pks plans\
+\
+ pks clusters\
+
+\f2 \
+V. Create new cluster (async)\
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl280\partightenfactor0
+\ls1\ilvl0
+\f1 \cf2  pks create-cluster cluster1 --external-hostname cluster1.haas-63.pez.pivotal.io --plan small
+\f2 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\
+\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 VI. Login to Harbor. Navigate through the Harbor interface. Show RBAC, Projects, repositories, images and scanned vulnerabilities.\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+ {\field{\*\fldinst{HYPERLINK "https://harbor.haas-63.pez.pivotal.io/harbor"}}{\fldrslt https://harbor.haas-63.pez.pivotal.io/harbor}}\
+\
+VII. Provision a new Storage Class (vsphere volume)\
+\
+
+\f1  kubectl get storageclasses
+\f2 \
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl280\partightenfactor0
+\ls2\ilvl0
+\f1 \cf2  kubectl apply -f 5-Helm/vsphere-volume.yaml\
+\
+ kubectl get storageclasses
+\f2 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\
+\
+VIII. Deploy Mysql from Harbor using helm chart.\'a0\
+\
+
+\f1  helm install --name my-release -f mysql.yaml stable/mysql
+\f2 \
+\
+\
+IX - Show deployment on K8s Dashboard\
+\
+
+\f1  kubectl proxy\
+\pard\pardeftab720\sl340\partightenfactor0
+\cf3 \ul \ulc3 \outl0\strokewidth0 \strokec3  {\field{\*\fldinst{HYPERLINK "http://127.0.0.1:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/login"}}{\fldrslt http://127.0.0.1:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/login}}\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2 \cf2 \ulnone \outl0\strokewidth0 X - \cf2 Deploy a NSX-T NetworkPolicy preventing access. \'a0Show access is blocked from another container.\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf2  kubectl run -i --tty ubuntu --image=ubuntu:16.04 --restart=Never -- bash -il\
+ apt-get update && apt-get install mysql-client -y\
+ mysql -h my-release-mysql -p 
+\f2 \cf2 \
+\pard\pardeftab720\sl340\partightenfactor0
+
+\f1 \cf3 \ul \ulc3 \outl0\strokewidth0 \strokec3 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f3 \cf2 \ulnone \outl0\strokewidth0 XI. Show clusters (hopefully new cluster will be done creating)\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl280\partightenfactor0
+\ls3\ilvl0
+\f1 \cf2 \kerning1\expnd0\expndtw0 	\expnd0\expndtw0\kerning0
+pks clusters\
+\ls3\ilvl0\kerning1\expnd0\expndtw0 	\expnd0\expndtw0\kerning0
+pks cluster cluster1
+\f2 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+XII. Scale cluster\'a0\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl280\partightenfactor0
+\ls4\ilvl0
+\f1 \cf2 \kerning1\expnd0\expndtw0 	\expnd0\expndtw0\kerning0
+pks resize -n 4 cluster1
+\f2 \
+\pard\pardeftab720\sl340\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 XIII. Show BOSH recovering failed etc/master\
+\
+    On OpsMan VM:\
+\
+	bosh alias-env vsphere -e 172.16.1.11 --ca-cert /var/tempest/workspaces/default/root_ca_certificate\
+	bosh -e vsphere login\
+                       director/
+\f4 \cf2 \outl0\strokewidth0 \strokec2 FDx-T_qzrRSCXHvaTPQed4WoHa2ust36\
+
+\f2 \cf2 \outl0\strokewidth0 \
+            bosh -e vsphere deployments\
+\
+            bosh -e vsphere -d service-instance_a83f4574-bc17-4067-a130-ee13bbc0621d vms\
+\
+            Take VM ID of master (vm-621decd0-e54c-481e-b43b-9d5592cbf08f)\
+\
+\
+
+\f1   Login to vsphere: {\field{\*\fldinst{HYPERLINK "https://vcsa-01.haas-63.pez.pivotal.io/"}}{\fldrslt https://vcsa-01.haas-63.pez.pivotal.io/}} \
+     {\field{\*\fldinst{HYPERLINK "mailto:administrator@vsphere.local"}}{\fldrslt 
+\fs26 \cf4 \cb5 \ul \ulc4 administrator@vsphere.local}}
+\f2 \
+\
+              Shutdown VM.\
+    	   Watch BOSH resurrecting it.\
+\
+\
+\
+\
+\
+\
+\'97\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf0 \kerning1\expnd0\expndtw0 Clean-up:\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1\fs24 \cf2 \expnd0\expndtw0\kerning0
+ helm del --purge my-release\
+ kubectl delete networkpolicy access-mysql\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2  kubectl delete storageclass default\cf2 \
+ kubectl delete event \'97-all\
+ pks delete-cluster cluster1\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f2 \cf2 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+}
