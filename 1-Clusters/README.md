@@ -1,3 +1,10 @@
+Pre-requisites:
+
+- PKS installed
+- User authenticated to the PKS CLI as admin
+
+ 
+
 1. Use the PKS CLI to list current clusters
 
   $ pks clusters
