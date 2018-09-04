@@ -70,9 +70,6 @@ redis-sample   172.28.1.2:6379,172.28.1.3:6379,172.28.1.4:6379   7m
 
    Make sure you can access the newly exposed service. If you have redis-cli you should be able to connect using the external IP and port.
 
-$ redis-cli -h 10.195.19.142 -p 6379
-  
-   Not working. Check https://redislabs.com/blog/getting-started-with-kubernetes-and-redis-using-redis-enterprise/ for troubleshooting
 
 
  

@@ -25,7 +25,8 @@ small  8A0E21A8-8072-4D80-B365-D1F502085560  Example: This plan will configure a
 
 3. Create a new PKS cluster
 
-   $ pks create-cluster cluster1 -p small -e cluster1.haas-63.pez.pivotal.io -n 4
+     Example:
+     $ pks create-cluster cluster1 -p small -e cluster1.haas-63.pez.pivotal.io -n 4
 
 Name:                     cluster1
 Plan Name:                small
